@@ -57,5 +57,5 @@ class cosinesimilarity(object):
             x1 += math.pow(vector[0][index], 2)
             y1 += math.pow(vector[1][index], 2)
             z1 += vector[0][index] * vector[1][index]
-        cosine = float(z1) / float(math.sqrt(x1) + math.sqrt(y1))
+        cosine = float(z1) / float(math.sqrt(x1) * math.sqrt(y1))
         return cosine
